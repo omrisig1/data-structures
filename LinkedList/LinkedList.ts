@@ -27,9 +27,12 @@ export class LinkedList {
     }
     public printList(list: LinkedList) {
         let currNode = list.head;
-        while(currNode.next !=null) {
+        if(currNode) {
             console.log(currNode.data+ ' ');
+        }
+        while(currNode.next !=null) {
             currNode = currNode.next;
+            console.log(currNode.data+ ' ');
         }
     }
 }
